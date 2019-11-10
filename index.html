@@ -9,27 +9,9 @@
 
 </head>
 <body>
-    <h3>Rebuild</h3>
-    <canvas id="myCanvas" width="400" height="400"
-style="border:1px solid #d3d3d3;">
-Your browser does not support the canvas element.
-</canvas>
+    <h2 id="title">Rebuild</h2>
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
 
-<script>
-
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-ctx.beginPath();
-ctx.arc(100,100,100,100,100*Math.PI);
-ctx.stroke();
-ctx.font = "30px Arial";
-ctx.fillText("Hello World",10,50);
-
-
-
-
-</script>
-    
 
 </body>
 </html>
