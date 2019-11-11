@@ -2,6 +2,7 @@ body {
     background-color: aquamarine;
 }
 
-#title {
+#title, #clock {
    text-align: center; 
 }
+
