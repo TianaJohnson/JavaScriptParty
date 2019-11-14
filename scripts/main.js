@@ -5,6 +5,7 @@ let completed = false ;
 $(document).ready(function (){
     placeholderValues();   // This was used to test my functions
     getChoreData();   // upon page load, info already stored in database will be appended to the DOM
+    
     $('#Submit-btn').on('click', choreInput);
     $('#chores-table').on('click', '.complete-btn', choreDone );   //click when chore is complete
     $('#chores-table').on('click', '.delete-btn', deleteLine );     // click to remove/delete row
@@ -125,5 +126,4 @@ function clearInput() {
 // function confColor(){
 //    $("<td></td>").css("background-color","lightGreen")
 // }
-})
 
