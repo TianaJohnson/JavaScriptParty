@@ -6,6 +6,7 @@
         <title>Practice Project</title>
         <script src="vendors/jquery-3.3.1.js" charset="utf-8"></script>
         <script src="scripts/main.js"></script>
+        <link rel="stylesheet" href="vendors/bootstrap.min.css">
         <link rel="stylesheet" href="main.css">
 
 </head>
@@ -15,8 +16,23 @@
 
     <div id="myDIV" class="header">
             <h2>My To Do List</h2>
-        <input class = "toDo"
-
+        <input class="form-control" id="choresToDo" type="text" placeholder="Chore to be done">
+        <button id="Submit-btn" class="btn btn-outline-primary">Submit</button>
+    </div>
+    <br>
+        <div>
+        <table class="table table-bordered table-dark">
+            <thead>
+                <tr>
+                    <th>Chores</th>
+                    <th>completed</th>
+                    <th>Status Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="chores-table">
+            </tbody>
+    </div>
 
 </body>
 </html>
