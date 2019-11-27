@@ -18,7 +18,7 @@ $(document).ready(function (){
 function getChoreData() {
     console.log('in getChoreData');
     // ajax call to server to get chores
-    $.ajax({
+    $ .ajax({
         method: 'GET',
         url: '/to-do'
     }).then(function (response) {

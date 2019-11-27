@@ -24,6 +24,7 @@ app.use(express.static('server/public'));
 
 
 
+// i need a get and post plus double check ajax
 
 
 
