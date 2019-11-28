@@ -1,7 +1,7 @@
-const divide = require('../modules/divide');
+const divide = require('./practice');
 
-test('If the number is divisible by 3, return "Fizz"',() => {
-    expect(divide(3)).toBe('Fizz');
+test('If the number is divisible by 3, return "Boop"',() => {
+    expect(divide(3)).toBe('Boop');
     });
 
 test('If the number is divisible by 5, return "Buzz"',() => {
