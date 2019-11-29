@@ -1,6 +1,10 @@
 const practice = {
     add:(num1, num2) => num1 + num2,
-    isNull: () => null
+    isNull: () => null,
+    checkValue: (p) => p,
+    createUser: () => {
+        const  
+    }
 };
 // const practice = (num1 , num2) => {
 //     return num1 + num2;
