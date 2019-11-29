@@ -19,7 +19,7 @@ test('Should be falsy', () => {
 
 //tobeTruthy
 test('User should be Tiana object', () => {
-    expect(practice.creatUser(null)).toBe({ firstName: 'Tiana',
+    expect(practice.createUser()).toEqual({ firstName: 'Tiana',
     lastName: 'Johnson'
 });
 });
@@ -34,6 +34,7 @@ test('User should be Tiana object', () => {
 // toBeDefined is the opposite of toBeUndefined
 // toBeTruthy matches anything that an if statement treats as true
 // toBeFalsy matches anything that an if statement trats as false 
+// toEqual 
 
 
 

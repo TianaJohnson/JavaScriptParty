@@ -4,7 +4,7 @@ const practice = {
     checkValue: (p) => p,
     createUser: () => {
         const user = {firstName: 'Tiana'}
-        user ['firstName'] = 'Johnson';
+        user ['lastName'] = 'Johnson';
         return user;
     }
 };
