@@ -6,7 +6,7 @@ const practice = require ('./practice');
 
 //didnt work
 test('Adds 2 + 2 to equal 4', () => {
-    expect(add( 2, 2 )).toBe( 4 );
+    expect(practice.add( 2, 2 )).toBe( 4 );
 });
 
 // const divide = require('./practice');

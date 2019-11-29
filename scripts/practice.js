@@ -1,11 +1,11 @@
-// const practice = {
-//     add:(num1, num2) => num1 + num2 
+const practice = {
+    add:(num1, num2) => num1 + num2 
+};
+// const practice = (num1 , num2) => {
+//     return num1 + num2;
 // }
-const practice = (num1 , num2) => {
-    return num1 + num2;
-}
 
-module.export = practice;
+module.exports = practice;
 
 
 // const divide = (num) => {
