@@ -12,10 +12,20 @@ test('Should be null', () => {
     expect(practice.isNull()).toBeNull();
 }); 
 
-//can work with null and undifined
+//can work with null and undifined toBeFalsy
 test('Should be falsy', () => {
     expect(practice.checkValue(null)).toBeFalsy();
 }); 
+
+//tobeTruthy
+test('User should be Tiana object', () => {
+    expect(practice.creatUser(null)).toBe({ firstName: 'Tiana',
+    lastName: 'Johnson'
+});
+});
+
+
+
 
 // RULES
 // CHECK FOR TRUTHY & FALSY VALUES

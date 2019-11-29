@@ -3,7 +3,9 @@ const practice = {
     isNull: () => null,
     checkValue: (p) => p,
     createUser: () => {
-        const  
+        const user = {firstName: 'Tiana'}
+        user ['firstName'] = 'Johnson';
+        return user;
     }
 };
 // const practice = (num1 , num2) => {
