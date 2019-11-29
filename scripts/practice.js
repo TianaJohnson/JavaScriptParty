@@ -1,5 +1,6 @@
 const practice = {
-    add:(num1, num2) => num1 + num2 
+    add:(num1, num2) => num1 + num2,
+    isNull: () => null
 };
 // const practice = (num1 , num2) => {
 //     return num1 + num2;

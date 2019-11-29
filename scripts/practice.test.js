@@ -8,6 +8,20 @@ test('Adds 2 + 2 to NOT equal 5', () => {
     expect(practice.add( 2, 2 )).not.toBe( 5 );
 });
 
+test('Should be null', () => {
+    expect(practice.isNull()).toBeNull();
+});
+
+// RULES
+// CHECK FOR TRUTHY & FALSY VALUES
+// toBeNull matches only null
+// toBeUndefined matches only undefined
+// toBeDefined is the opposite of toBeUndefined
+// toBeTruthy matches anything that an if statement treats as true
+// toBeFalsy matches anything that an if statement trats as false 
+
+
+
 // const divide = require('./practice');
 
 // test('If the number is divisible by 3, return "Boop"',() => {
