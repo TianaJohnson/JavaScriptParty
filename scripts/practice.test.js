@@ -1,6 +1,8 @@
 const practice = require ('./practice');
 
-
+test ('add 2 + 2 to equal 4',() =>{
+    expect(2+2).toBe(4);
+});
 
 //didnt work
 // test('Adds 2 + 2 to equal 4', () => {
