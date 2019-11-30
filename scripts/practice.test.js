@@ -32,6 +32,17 @@ test('should be under 1600', () => {
     expect(load1 + load2).toBeLessThanOrEqual(1600);
 })
 
+//regular expretions 
+test('there is no I in team', () => {
+    expect('team').not.toMatch(/I/);
+});
+
+// arrays
+test('Sam should be in usernames', ()=> {
+    usernames = [ 'Paul', 'Tom', 'Jen', 'Kelly', 'Sam'];
+    expect(usernames).toContain('Sam');
+})
+
 
 
 // RULES
