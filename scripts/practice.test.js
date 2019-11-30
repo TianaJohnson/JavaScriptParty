@@ -1,29 +1,36 @@
-const practice = require ('./practice');
+const practice = require('./practice');
 
 test('Adds 2 + 2 to equal 4', () => {
-    expect(practice.add( 2, 2 )).toBe( 4 );
+    expect(practice.add(2, 2)).toBe(4);
 });
 
 test('Adds 2 + 2 to NOT equal 5', () => {
-    expect(practice.add( 2, 2 )).not.toBe( 5 );
+    expect(practice.add(2, 2)).not.toBe(5);
 });
 
 test('Should be null', () => {
     expect(practice.isNull()).toBeNull();
-}); 
+});
 
 //can work with null and undifined toBeFalsy
 test('Should be falsy', () => {
     expect(practice.checkValue(null)).toBeFalsy();
-}); 
+});
 
-//tobeTruthy
+//toEqual for object or array
 test('User should be Tiana object', () => {
-    expect(practice.createUser()).toEqual({ firstName: 'Tiana',
-    lastName: 'Johnson'
-});
+    expect(practice.createUser()).toEqual({
+        firstName: 'Tiana',
+        lastName: 'Johnson'
+    });
 });
 
+//less than / greater than
+test('should be under 1600', () => {
+    const load1 = 800;
+    const load2 = 800;
+    expect(load1 + load2).toBeLessThanOrEqual(1600);
+})
 
 
 
@@ -47,7 +54,7 @@ test('User should be Tiana object', () => {
 // test('If the number is divisible by 5, return "Buzz"',() => {
 //     expect(divide(5)).toBe('Buzz');
 // });
-        
+
 // test('If the number is divisible by both 3 and 5, return "FizzBuzz"',() => {
 //     expect(divide(15)).toBe('Fizzbuzz');
 // })
