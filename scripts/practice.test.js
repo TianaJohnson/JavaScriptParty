@@ -46,7 +46,15 @@ test('Sam should be in usernames', ()=> {
     expect(usernames).toContain('Sam');
 })
 
-
+//working with async data
+//expect.assertions is used with async code 
+test('User fetched name should be Leanne Graham', ()=> {
+    expect.assertions(1);
+    return functions.fetchUser()
+        .then(data => {
+            expect(data.name).toEqual('Leanne Graham')
+        })
+})
 
 
 
