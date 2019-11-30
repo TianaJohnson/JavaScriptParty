@@ -37,7 +37,7 @@ test('there is no I in team', () => {
     expect('team').not.toMatch(/I/);
 });
 
-// arrays
+// arrays  toConatain
 test('Sam should be in usernames', ()=> {
     usernames = [ 'Paul', 'Tom', 'Jen', 'Kelly', 'Sam'];
     expect(usernames).toContain('Sam');
