@@ -1,9 +1,11 @@
 const practice = require('./practice');
 
+// toBe add 
 test('Adds 2 + 2 to equal 4', () => {
     expect(practice.add(2, 2)).toBe(4);
 });
 
+//not.toBe add
 test('Adds 2 + 2 to NOT equal 5', () => {
     expect(practice.add(2, 2)).not.toBe(5);
 });
