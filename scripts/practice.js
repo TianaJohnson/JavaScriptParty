@@ -8,6 +8,8 @@ const practice = {
         return user;
     }
 };
+
+fetchUser: () +> axios.get
 // const practice = (num1 , num2) => {
 //     return num1 + num2;
 // }
