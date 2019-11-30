@@ -10,6 +10,7 @@ test('Adds 2 + 2 to NOT equal 5', () => {
     expect(practice.add(2, 2)).not.toBe(5);
 });
 
+// isNull toBeNull
 test('Should be null', () => {
     expect(practice.isNull()).toBeNull();
 });
