@@ -1,3 +1,5 @@
+
+
 let numbers = [2, 4, 9, 2, 0, 16, 24]
 var largest = numbers[0];
 var smallest = numbers[0];
@@ -12,3 +14,6 @@ for (var i = 1; i < numbers.length; i++) {
     console.log(largest);
     console.log(smallest);
 
+module.exports = loops;
+// is this right?
+// probably not
