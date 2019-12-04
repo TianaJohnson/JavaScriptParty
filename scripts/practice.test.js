@@ -44,27 +44,32 @@ test('there is no I in team', () => {
 test('Sam should be in usernames', ()=> {
     usernames = [ 'Paul', 'Tom', 'Jen', 'Kelly', 'Sam'];
     expect(usernames).toContain('Sam');
-})
+});
+
+test('User fetched name should be Leanne Graham', ()=> {
+    expect.assertions(1);
+    return practice.fetchUser()
+        .then(data => {
+          expect(data.name).toEqual('Leanne Graham')
+        });
+});
 
 //working with async data
-//expect.assertions is used with async code 
+// expect.assertions is used with async code 
 // test('User fetched name should be Leanne Graham', ()=> {
 //     expect.assertions(1);
-//     return practice.fetchUser()
-//         .then(data => {
+//     return practice.fetchUser().then(data => {
 //           expect(data.name).toEqual('Leanne Graham')
 //         });
 // });
 
 
 //async await
-test('User fetched name should be Leanne Graham', async ()=> {
-    expect.assertions(1);
-    const data = await practice.fetchUser()
-        .then(data => {
-          expect(data.name).toEqual('Leanne Graham')
-        });
-});
+// test('User fetched name should be Leanne Graham', async ()=> {
+//     expect.assertions(1);
+//     const data = await practice.fetchUser();     
+//     expect(data.name).toEqual('Leanne Graham')
+// });
 
 
 // RULES
@@ -77,20 +82,20 @@ test('User fetched name should be Leanne Graham', async ()=> {
 
 
 
-test('If the number is divisible by 3, return "Fizz"',() => {
-    expect(divide(3)).toBe('Fizz');
-    });
+// test('If the number is divisible by 3, return "Fizz"',() => {
+//     expect(divide(3)).toBe('Fizz');
+//     });
 
-test('If the number is divisible by 5, return "Buzz"',() => {
-    expect(divide(5)).toBe('Buzz');
-});
+// test('If the number is divisible by 5, return "Buzz"',() => {
+//     expect(divide(5)).toBe('Buzz');
+// });
         
-test('If the number is divisible by both 3 and 5, return "FizzBuzz"',() => {
-    expect(divide(15)).toBe('Fizzbuzz');
-})
+// test('If the number is divisible by both 3 and 5, return "FizzBuzz"',() => {
+//     expect(divide(15)).toBe('Fizzbuzz');
+// })
 
-test('If the number is not divisable by 3 or 5 than return num', () => {
-    expect(divide(1)).toBe(1);
-})
+// test('If the number is not divisable by 3 or 5 than return num', () => {
+//     expect(divide(1)).toBe(1);
+// })
 
 
