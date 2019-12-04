@@ -21,7 +21,7 @@ test('Should be falsy', () => {
 });
 
 //toEqual for object or array
-test('User should be Tiana object', () => {
+test('User should be Tiana JOhnson object', () => {
     expect(practice.createUser()).toEqual({
         firstName: 'Tiana',
         lastName: 'Johnson'
