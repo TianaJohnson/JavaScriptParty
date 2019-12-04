@@ -46,16 +46,8 @@ test('Sam should be in usernames', ()=> {
     expect(usernames).toContain('Sam');
 });
 
-test('User fetched name should be Leanne Graham', ()=> {
-    expect.assertions(1);
-    return practice.fetchUser()
-        .then(data => {
-          expect(data.name).toEqual('Leanne Graham')
-        });
-});
 
-//working with async data
-// expect.assertions is used with async code 
+  //promise
 // test('User fetched name should be Leanne Graham', ()=> {
 //     expect.assertions(1);
 //     return practice.fetchUser().then(data => {
@@ -65,11 +57,11 @@ test('User fetched name should be Leanne Graham', ()=> {
 
 
 //async await
-// test('User fetched name should be Leanne Graham', async ()=> {
-//     expect.assertions(1);
-//     const data = await practice.fetchUser();     
-//     expect(data.name).toEqual('Leanne Graham')
-// });
+test('User fetched name should be Leanne Graham', async ()=> {
+    expect.assertions(1);
+    const data = await practice.fetchUser();     
+    expect(data.name).toEqual('Leanne Graham')
+});
 
 
 // RULES
