@@ -1,7 +1,14 @@
 const practice = require('./practice');
 
-beforeEach(() => initDatabase());
-afterEach(() => closeDatabase());
+//to run something(function) before/after a test has been run
+// beforeEach(() => initDatabase());
+// afterEach(() => closeDatabase());
+
+// to run something before all tests
+// then run something after all test have be completed
+beforeAll(() => initDatabase());
+afterAll(() => closeDatabase());
+
 
 
 const initDatabase = () => console.log('Database Initialized...');
