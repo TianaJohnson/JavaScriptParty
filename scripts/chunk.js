@@ -17,6 +17,6 @@ const chunkArray = (arr, len) => {
     });
 
     return chunkedArr;
-};
+}; 
 
 module.exports = chunkArray;
