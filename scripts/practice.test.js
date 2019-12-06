@@ -6,13 +6,28 @@ const practice = require('./practice');
 
 // to run something before all tests
 // then run something after all test have be completed
-beforeAll(() => initDatabase());
-afterAll(() => closeDatabase());
+// beforeAll(() => initDatabase());
+// afterAll(() => closeDatabase());
 
+// const initDatabase = () => console.log('Database Initialized...');
+// const closeDatabase = () => console.log('Database Closed...');
+const nameCheck = () => console.log('Checking Name....');
 
+// checks only tess run inside of decribe ...
+describe('checking Names', () => {
+     beforeEach(() => nameCheck());
 
-const initDatabase = () => console.log('Database Initialized...');
-const closeDatabase = () => console.log('Database Closed...');
+     test('User is Jeff', () => {
+         const user = 'Jeff';
+         expect(user).toBe('Jeff');
+     });
+
+     test('User is Karen', () => {
+        const user = 'Karen';
+        expect(user).toBe('Karen');
+    });
+});
+
 // toBe add 
 test('Adds 2 + 2 to equal 4', () => {
     expect(practice.add(2, 2)).toBe(4);
