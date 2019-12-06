@@ -1,4 +1,3 @@
-import { formatStackTrace } from "jest-message-util";
 
 function isAnagram(str1, str2) {
     return formatStr(str1) === formatStr(str2);
