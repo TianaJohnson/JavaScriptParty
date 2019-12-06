@@ -9,3 +9,8 @@ test('isAnagram function exists', () => {
 test (' "cinema" is an anagram of "iceman" ', () => {
     expect(isAnagram('cinema', 'iceman')).toBeTruthy();
 }); 
+
+// Does it work
+test (' "Dormirory" is an anagram of "dirty room###" ', () => {
+    expect(isAnagram('Dormitory', 'dirty room###')).toBeTruthy();
+}); 
