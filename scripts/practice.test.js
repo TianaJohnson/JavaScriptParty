@@ -1,5 +1,11 @@
 const practice = require('./practice');
 
+beforeEach(() => initDatabase());
+afterEach(() => closeDatabase());
+
+
+const initDatabase = () => console.log('Database Initialized...');
+const closeDatabase = () => console.log('Database Closed...');
 // toBe add 
 test('Adds 2 + 2 to equal 4', () => {
     expect(practice.add(2, 2)).toBe(4);
